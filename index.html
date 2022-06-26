@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto settimana 8 - Cellulari</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+  <body>
+
+    <div class="container">
+		<div class="smallCon">
+			<div class="cam"></div>
+			<div class="sound"></div>
+		</div>
+		<div class="screen">
+			<div class="viewport">
+				<div class="unlock-screen1">
+                    <h3>Saldo Disponibile: <br><span class='saldoFirstUser'></span> </h3>
+                    <h3>Totale chiamate: <br><span class='numeroChiamateFirstUser'></span> <button class="azzeraFirstUser" type="button" name="button"><i class="bi bi-trash3-fill"></i></button> </h3>
+                    <h3>Totale durata chiamate: <br><span class='durataChiamateFirstUser'></span></h3>           
+                    <h3>Chiamata in corso:  <br><span class="timerFirstUser"></span></h3><br>	
+                    <button class="btnStart" onclick="start()" onclick="disabilitaTastoVerde()"><i class="bi bi-telephone-outbound-fill"></i></button>
+                    <button class="btnEnd" onclick="end()" ><i class="bi bi-telephone-plus-fill"></i></button>				
+                    <h4>Ricarica saldo: <br><input type="number" class="importoFirstUser" placeholder="MIN 2€" aria-label="Zip"><button class="ricaricaFirstUser" type="button" name="button"><i class="bi bi-bank2"></i></button></h4><br>                                              
+				</div>
+				<div class="lockscreen firstLockScreen">
+					<div id="clock1">
+				   <h5>Napoli <br> <div class="gradi"> 33<span class="simboloGradi">°</span><i class="bi bi-brightness-high-fill"></i></div><div id="oraEsatta1"></div></h5>
+
+						<div></div>		
+					</div>
+					<div class="slide"><i class="bi bi-caret-left-fill"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="butnCon">
+			<div class="butn"></div>
+		</div>
+	</div>
+
+
+    <div class="container2">
+		<div class="smallCon">
+			<div class="cam"></div>
+			<div class="sound"></div>
+		</div>
+		<div class="screen">
+			<div class="viewport2">
+				<div class="unlock-screen2">
+                    <h3>Saldo Disponibile: <br><span class='saldoSecondUser'></span> </h3>
+                    <h3>Totale chiamate: <br><span class='numeroChiamateSecondUser'></span> <button class="azzeraSecondUser" type="button" name="button"><i class="bi bi-trash3-fill"></i></button> </h3>
+                    <h3>Totale durata chiamate: <br><span class='durataChiamateSecondUser'></span> </h3>           
+                    <h3>Chiamata in corso:  <br><span class="timerSecondUser"></span></h3><br>	
+                    <button class="btnStartSecondUser" onclick="start_2()" onclick="disabilitaTastoVerdeSecondUser()"><i class="bi bi-telephone-outbound-fill"></i></button>
+                    <button class="btnEndSecondUser" onclick="end_2()" ><i class="bi bi-telephone-plus-fill"></i></button>				
+                    <h4>Ricarica saldo: <br><input type="number" class="importoSecondUser" placeholder="MIN 2€" aria-label="Zip"><button class="ricaricaSecondUser" type="button" name="button"><i class="bi bi-bank2"></i></button></h4><br>                                   
+				</div>
+				<div class="lockscreen secondLockScreen">
+					<div id="clock2">
+					<h5>New York <br><div class="gradi"> 26<span class="simboloGradi">°</span><i class="bi bi-brightness-high-fill"></i></div> <div id="oraEsatta2"></div></h5>
+						<div></div>	
+					</div>
+					<div class="slide2"><i class="bi bi-caret-left-fill"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="butnCon">
+			<div class="butn"></div>
+		</div>
+	</div>
+
+	<div class="container3">
+		<div class="smallCon">
+			<div class="cam"></div>
+			<div class="sound"></div>
+		</div>
+		<div class="screen">
+			<div class="viewport3">
+				<div class="unlock-screen3">
+                    <h3>Saldo Disponibile: <br><span class='saldoThirdUser'></span> </h3>
+                    <h3>Totale chiamate: <br><span class='numeroChiamateThirdUser'></span> <button class="azzeraThirdUser" type="button" name="button"><i class="bi bi-trash3-fill"></i></button> </h3>
+                    <h3>Totale durata chiamate: <br><span class='durataChiamateThirdUser'></span> </h3>           
+                    <h3>Chiamata in corso:  <br><span class="timerThirdUser"></span></h3><br>	
+                    <button class="btnStartThirdUser" onclick="start_3()" onclick="disabilitaTastoVerdeThirdUser()"><i class="bi bi-telephone-outbound-fill"></i></button>
+                    <button class="btnEndThirdUser" onclick="end_3()" ><i class="bi bi-telephone-plus-fill"></i></button>				
+                    <h4>Ricarica saldo: <br><input type="number" class="importoThirdUser" placeholder="MIN 2€" aria-label="Zip"><button class="ricaricaThirdUser" type="button" name="button"><i class="bi bi-bank2"></i></button></h4><br>            
+				</div>
+				<div class="lockscreen thirdLockScreen">
+					<div id="clock3">
+					<h5>Tokyo <br><div class="gradi"> 12<span class="simboloGradi">°</span><i class="bi bi-moon-fill"></i></div><div id="oraEsatta3"></div></h5>
+
+						<div></div>
+					</div>
+					<div class="slide3"><i class="bi bi-caret-left-fill"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="butnCon">
+			<div class="butn"></div>
+		</div>
+	</div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

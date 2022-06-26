@@ -1,0 +1,324 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: white;
+  font-weight: 400;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 3px 3px;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    display: inline-block;
+  }
+}
+
+.container, .container2, .container3 {
+  width: 340px;
+  height: 660px;
+  border: 3px solid grey;
+  border-radius: 30px;
+  margin: 0;
+  background-color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen {
+  display: block;
+  width: 320px;
+  height: 520px;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.05)), color-stop(50%, rgba(255, 255, 255, 0.05)), color-stop(50%, transparent), to(transparent));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 50%, transparent 50%, transparent);
+}
+
+.butnCon {
+  width: 340px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.butn {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #303030;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.04)), color-stop(50%, rgba(255, 255, 255, 0.04)), color-stop(50%, transparent), to(transparent));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 50%, transparent 50%, transparent);
+}
+
+.smallCon {
+  width: 340px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cam {
+  width: 5px;
+  height: 5px;
+  background-color: #202020;
+  border-radius: 2px;
+}
+
+.sound {
+  width: 40px;
+  height: 5px;
+  background-color: #202020;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.slide, .slide2, .slide3 {
+  width: 100%;
+  height: 60px;
+  font-family: roboto;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.slide:after, .slide2:after, .slide3:after {
+  content: ' Trascina per sbloccare';
+  display: inline;
+}
+
+.viewport, .viewport2, .viewport3 {
+  height: 100%;
+  width: 200%;
+  -webkit-transform: translateX(-320px);
+          transform: translateX(-320px);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.viewport > div, .viewport2 > div, .viewport3 > div {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.lockscreen {
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.unlock-screen1, .unlock-screen2, .unlock-screen3 {
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.unlock-screen1 input, .unlock-screen2 input, .unlock-screen3 input {
+  text-align: center;
+  width: 60px;
+  height: 30px;
+  font-size: 1rem;
+  padding-top: 8px;
+}
+
+.unlock-screen1 {
+  background: linear-gradient(132deg, #026cdf 0%, #00f6fd 100%);
+}
+
+.unlock-screen2 {
+  background: linear-gradient(132deg, #41505f 0%, #242526 100%);
+}
+
+.unlock-screen3 {
+  background: linear-gradient(132deg, #fd3685 0%, #fecfd7 100%);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.firstLockScreen {
+  background-image: url(../img/sfondoMaradona.jpg);
+  background-size: cover;
+}
+
+.container2 .secondLockScreen {
+  background-image: url(../img/SfondoNew_York.jpg);
+  background-size: cover;
+  background-color: black;
+}
+
+.thirdLockScreen {
+  background-image: url(../img/sfondoTokyo.jpg);
+  background-size: cover;
+}
+
+.azzeraFirstUser, .azzeraSecondUser, .azzeraThirdUser, .azzeraDurataFirstUser {
+  color: red;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+
+.azzeraThirdUser {
+  background: transparent;
+}
+
+.azzeraThirdUser .bi-trash3-fill {
+  color: black;
+}
+
+.btnStart, .btnEnd, .btnStartSecondUser, .btnEndSecondUser, .btnStartThirdUser, .btnEndThirdUser {
+  margin: 0 35px;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 40px;
+  padding: 8px 11px;
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #333333 0px 0px 0px 3px;
+}
+
+.btnStartSecondUser, .btnEndSecondUser {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, white 0px 0px 0px 3px;
+          box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, white 0px 0px 0px 3px;
+}
+
+.btnStart, .btnStartSecondUser, .btnStartThirdUser {
+  background-color: #15cb15;
+}
+
+.btnStart:hover, .btnStartSecondUser:hover, .btnStartThirdUser:hover {
+  background-color: #0c810c;
+}
+
+.btnEnd, .btnEndSecondUser, .btnEndThirdUser {
+  background-color: red;
+  display: inline-block;
+  -webkit-transform: rotate(136deg);
+          transform: rotate(136deg);
+}
+
+.btnEnd:hover, .btnEndSecondUser:hover, .btnEndThirdUser:hover {
+  background-color: #c10b0b;
+}
+
+.ricaricaFirstUser, .ricaricaSecondUser, .ricaricaThirdUser {
+  margin-left: 8px;
+  width: 40px;
+  height: 42px;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: gold;
+  margin-top: 10px;
+}
+
+.removeBugTimer {
+  pointer-events: none;
+}
+
+#clock1 h5, #clock2 h5, #clock3 h5 {
+  font-family: roboto;
+  text-align: center;
+  margin-top: 16px !important;
+}
+
+#oraEsatta1, #oraEsatta2, #oraEsatta3 {
+  font-size: 1.4rem !important;
+  margin-top: 10px;
+}
+
+.simboloGradi {
+  font-size: 1.9rem !important;
+  margin: 0px 8px 0px 2px;
+}
+
+h5 {
+  font-size: 3rem !important;
+  font-weight: 400;
+}
+
+h5 .gradi {
+  font-size: 2rem !important;
+}
+
+h5 .bi {
+  font-size: 1.8rem !important;
+}
+
+h5 .bi-moon-fill {
+  color: #fbff82;
+}
+
+h5 .bi-brightness-high-fill {
+  color: #ffe600;
+}
+/*# sourceMappingURL=style.css.map */
