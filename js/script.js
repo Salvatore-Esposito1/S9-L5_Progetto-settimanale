@@ -386,7 +386,8 @@ document.addEventListener('DOMContentLoaded', () => {
         importo.value = '';
     });
     (_b = document.querySelector('.azzeraFirstUser')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', () => {
-        firstUser._numeroChiamate = 0;
+        let ktm = arrayDurataChiamate.length;
+        ktm = 0;
         let numeroChiamateFirstUser = document.querySelector('.numeroChiamateFirstUser');
         numeroChiamateFirstUser.innerHTML = String(firstUser._numeroChiamate);
     });
